@@ -1,0 +1,54 @@
+.location-bottom {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.location-top {
+  opacity: 0;
+}
+
+
+.location-item {
+  width: 40%;
+  img {
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 200px;
+  }
+}
+
+.location {
+  height: 120vh;
+  text-align: center;
+  color: white;
+  h2 {
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 10%;
+    margin-bottom: 2%;
+  }
+  h3 {
+    font-size: 3.0rem;
+    text-shadow: 4px 4px 2px black;
+    margin-top: -45%;
+  }
+  p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10%;
+  }
+}
+
+.location-top p:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 5%;;
+    border-bottom: 2px solid goldenrod; /* This creates the border. Replace black with whatever color you want. */
+}

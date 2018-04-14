@@ -1,0 +1,84 @@
+.featured {
+  height: 190vh;
+  background: #dee0e2;
+  text-align: center;
+  h2 {
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    padding-top: 15%;
+    margin-top: 0;
+    margin-bottom: 2%;
+  }
+  p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10%;
+  }
+}
+
+/* .featured-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.featured-item2 {
+  width: 30%;
+  margin-bottom: 4%;
+
+  img {
+    width: 100%;
+    border-radius: 7%;
+  }
+} */
+
+.featured-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  opacity: 0;
+}
+
+.gallery-item {
+  width: 30%;
+  margin-bottom: 5%;
+  box-shadow: 1px 1px 2px grey;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  img {
+    width: 100%;
+  }
+}
+
+.gallery-item:hover {
+  box-shadow: 6px 8px 3px grey,
+              6px 8px 3px grey,
+              6px 8px 3px grey,
+              6px 6px 3px grey;
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.gallery-item:last-of-type {
+  flex-grow: 0.5;
+  margin: 0 auto;
+}
+
+.featured-top {
+  opacity: 0;
+}
+
+.js-animate {
+  opacity: 1;
+}
+
+
+.featured-top p:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 5%;;
+    border-bottom: 2px solid tomato; /* This creates the border. Replace black with whatever color you want. */
+}
