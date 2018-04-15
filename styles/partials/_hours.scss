@@ -12,6 +12,7 @@
   h2 {
     font-size: 7.5rem;
     padding-top: 10%;
+    margin-bottom: 2%;
   }
   p {
     font-size: 1.3rem;
@@ -74,7 +75,7 @@
 @media (max-width: $break-tablet) {
   .hours {
     h2 {
-     font-size: 5.0rem;
+     font-size: 4.0rem;
    }
    p {
      font-size: 1.0rem;

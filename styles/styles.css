@@ -259,7 +259,7 @@ header ul {
 header a {
   text-decoration: none;
   padding: 20px;
-  font-size: 1.0rem;
+  font-size: 1.2rem;
   text-shadow: 1px 1px 2px white;
   text-transform: uppercase; }
 
@@ -299,7 +299,9 @@ header img {
   header a {
     font-size: 0.8rem; }
   header h1 {
-    margin-top: 50%; } }
+    margin-top: 50%; }
+  header a {
+    font-size: 0.7rem; } }
 
 .featured {
   /* height: 250vh; */
@@ -372,7 +374,7 @@ header img {
 
 @media (max-width: 800px) {
   .featured h2 {
-    font-size: 5.0rem; }
+    font-size: 4.0rem; }
   .featured p {
     font-size: 1.0rem; }
   .gallery-item {
@@ -446,7 +448,7 @@ header img {
   .location {
     /* height: 155vh; */ }
     .location h2 {
-      font-size: 5.0rem; }
+      font-size: 4.0rem; }
     .location p {
       font-size: 1.0rem; } }
 
@@ -464,7 +466,8 @@ header img {
   background: #dee0e2; }
   .hours h2 {
     font-size: 7.5rem;
-    padding-top: 10%; }
+    padding-top: 10%;
+    margin-bottom: 2%; }
   .hours p {
     font-size: 1.3rem;
     font-weight: bold;
@@ -522,7 +525,7 @@ header img {
 
 @media (max-width: 800px) {
   .hours h2 {
-    font-size: 5.0rem; }
+    font-size: 4.0rem; }
   .hours p {
     font-size: 1.0rem; }
   .hours-item {
@@ -640,7 +643,7 @@ header img {
 
 @media (max-width: 800px) {
   .prices h2 {
-    font-size: 5.0rem; }
+    font-size: 4.0rem; }
   .prices p {
     font-size: 1.0rem; }
   .prices-item h4 {
@@ -793,7 +796,7 @@ figcaption p {
   figure:hover figcaption {
     display: none; }
   .newarrivals h2 {
-    font-size: 5.0rem;
+    font-size: 4.0rem;
     margin-top: 5%; }
   .newarrivals p {
     font-size: 1.0rem; } }
@@ -841,6 +844,9 @@ footer {
     line-height: 2; }
     .footer-item a:hover {
       color: tomato; }
+
+.terms a {
+  line-height: 0; }
 
 .sign-up {
   padding: 20px 0; }
@@ -931,3 +937,7 @@ footer p {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1; } }
+
+@media (max-width: 500px) {
+  .social-icons {
+    padding-top: 60%; } }
