@@ -9,10 +9,6 @@
 }
 
 .retailprices {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
-  background-size: cover;
-  height: 95vh;
-  background-position: bottom;
   display: flex;
   flex-direction: column;
 }
@@ -24,6 +20,7 @@
   justify-content: space-between;
   max-width: 1150px;
   opacity: 0;
+  padding-bottom: 20%;
 }
 
 .prices {
@@ -31,6 +28,7 @@
   align-items: center;
   flex-direction: column;
   opacity: 0;
+  text-align: center;
   h2 {
     font-size: 6.0rem;
     margin-bottom: 2%;
@@ -96,4 +94,32 @@
   color: white;
   width: 45%;
   margin-right: 3%;
+}
+
+@media (max-width: $break-tablet) {
+  .prices {
+    h2 {
+     font-size: 5.0rem;
+     }
+     p {
+     font-size: 1.0rem;
+     }
+}
+
+  .prices-item {
+    h4 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+}
+
+@media (max-width: $break-phone) {
+    .prices-item {
+      width: 98%;
+      margin: 0 auto;
+    }
 }

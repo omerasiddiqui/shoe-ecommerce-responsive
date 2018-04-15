@@ -5,12 +5,13 @@
   color: black;
   width: 80%;
   opacity: 0;
+  margin-bottom: 10%;
   h3 {
-   font-size: 1.7rem;
+   font-size: 1.1rem;
    color: white;
  }
   p {
-   font-size: 1.1rem;
+   font-size: 1.6rem;
    color: white;
  }
   img {
@@ -34,6 +35,7 @@
 
 .newarrivals h3 + p {
   color: tomato;
+  font-size: 1.1rem;
 }
 
 .newarrivals-bottom figure {
@@ -69,15 +71,15 @@ figcaption h3 {
 figcaption p {
   margin-top: 0;
   text-transform: uppercase;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
 }
 
 .moreDetails {
   width: 30%;
   height: 30%;
-  padding: 2%;
+  padding: 4%;
   border-radius: 5%;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: black;
   background: #e0ecff;
   text-decoration: none;
@@ -97,10 +99,10 @@ figcaption p {
   flex-direction: column;
   text-align: center;
   background: #dee0e2;
-  height: 130vh;
+  /* height: 148vh; */
   h2 {
     font-size: 6.0rem;
-    margin-bottom: 2%;
+    margin: 20% 0 2%;
     color: black;
     }
   p {
@@ -123,3 +125,45 @@ figcaption p {
   .newarrivals-top {
     opacity: 0;
   }
+
+  @media (max-width: $break-tablet) {
+
+    .wrapper {
+      width: 80%;
+    }
+
+    .newarrivals-bottom figure {
+      width: 30%;
+    }
+
+    figure:hover figcaption {
+      display: none;
+      }
+
+    .newarrivals {
+      h2 {
+       font-size: 5.0rem;
+       margin-top: 5%;
+       }
+       p {
+       font-size: 1.0rem;
+       }
+  }
+
+  @media (max-width: $break-phone) {
+    .newarrivals h2 {
+      margin-top: 20%;
+    }
+
+    .newarrivals-bottom figure {
+      width: 48%;
+    }
+
+    .newarrivals-bottom figure:last-of-type {
+      margin: 0 auto;
+    }
+
+
+
+  }
+}

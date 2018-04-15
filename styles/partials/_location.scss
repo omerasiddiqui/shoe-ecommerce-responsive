@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     opacity: 0;
+    margin-bottom: 10%;
 }
 
 .location-top {
@@ -17,17 +18,18 @@
   a {
     text-decoration: none;
     color: white;
-    padding: 200px;
   }
 }
 
+.location-item:nth-of-type(2) {
+  margin-bottom: 22%;
+}
+
 .location {
-  height: 120vh;
   text-align: center;
   color: white;
   h2 {
     font-size: 7.5rem;
-    text-transform: uppercase;
     margin-top: 0;
     padding-top: 10%;
     margin-bottom: 2%;
@@ -50,5 +52,32 @@
     margin: 0 auto;
     width: 40%;
     padding-top: 5%;;
-    border-bottom: 2px solid goldenrod; /* This creates the border. Replace black with whatever color you want. */
+    border-bottom: 2px solid goldenrod;
+}
+
+@media (max-width: $break-tablet) {
+  .location-item {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 15%;
+    width: 70%;
+  }
+  .location-bottom {
+      flex-direction: column;
+  }
+
+  .location {
+      /* height: 155vh; */
+    h2 {
+     font-size: 5.0rem;
+     }
+     p {
+     font-size: 1.0rem;
+     }
+}
+
+}
+
+@media (max-width: $break-phone) {
+
 }

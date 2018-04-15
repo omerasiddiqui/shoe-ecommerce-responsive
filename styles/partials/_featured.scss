@@ -1,5 +1,5 @@
 .featured {
-  height: 190vh;
+  /* height: 250vh; */
   background: #dee0e2;
   text-align: center;
   h2 {
@@ -15,22 +15,6 @@
     margin-bottom: 10%;
   }
 }
-
-/* .featured-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.featured-item2 {
-  width: 30%;
-  margin-bottom: 4%;
-
-  img {
-    width: 100%;
-    border-radius: 7%;
-  }
-} */
 
 .featured-gallery {
   display: flex;
@@ -80,5 +64,30 @@
     margin: 0 auto;
     width: 40%;
     padding-top: 5%;;
-    border-bottom: 2px solid tomato; /* This creates the border. Replace black with whatever color you want. */
+    border-bottom: 2px solid tomato;
+}
+
+@media (max-width: $break-tablet) {
+  .featured {
+    h2 {
+     font-size: 5.0rem;
+   }
+   p {
+     font-size: 1.0rem;
+   }
+  }
+  .gallery-item {
+    width: 48%;
+  }
+
+  .gallery-item:last-of-type {
+    flex-grow: 0.5;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (max-width: $break-phone) {
+
 }

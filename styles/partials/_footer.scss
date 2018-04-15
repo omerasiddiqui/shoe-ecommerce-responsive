@@ -1,20 +1,22 @@
 footer {
-  height: 25vh;
   text-align: center;
   color: black;
   background: white;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: baseline;
+  padding: 0 50px;
 }
 
 .footer-item {
   display: flex;
   flex-direction: column;
+  width: 18%;
   a {
     text-decoration: none;
     color: black;
@@ -30,14 +32,14 @@ footer {
 }
 
 .sign-up input[type="text"] {
-  width: 80%;
+  width: 100%;
   border: none;
   padding: 15px 0;
   margin-top: 5%;
 }
 
 .sign-up input[type="submit"] {
-  width: 20%;
+  width: 50%;
   border: none;
   padding: 15px 0;
 }
@@ -65,12 +67,12 @@ input[type="submit"]:hover {
 
 label {
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
 }
 
 .footer-item p:first-of-type {
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
 }
 
 .social-icons {
@@ -102,7 +104,7 @@ footer p {
 
 
 .svg-inline--fa {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin: 5px;
   color: black;
   margin-right: 20px;
@@ -110,4 +112,25 @@ footer p {
 
 .svg-inline--fa:hover {
   color: tomato;
+}
+
+@media (max-width: $break-tablet) {
+    .footer-item {
+      width: 30%;
+    }
+
+    .connect {
+      order: -1;
+      width: 33%
+    }
+
+    .email {
+      width: 66%;
+      order: -1;
+    }
+
+}
+
+@media (max-width: $break-phone) {
+
 }
