@@ -3,10 +3,12 @@ header {
   height: 120vh;
   background-position: top;
   background-size: cover;
-  margin: 0 auto;
+  margin: 0;
 }
 
-
+nav a {
+  font-family: $heading-font;
+}
 
 .top-bar {
   text-align: center;
@@ -15,7 +17,6 @@ header {
   color: white;
   font-size: 0.8rem;
   text-transform: uppercase;
-  /* display: inline-block; */
   width: 25%;
   margin: 1px 38%;
   border: 1px solid goldenrod;
@@ -25,10 +26,6 @@ header {
 
 .top-bar:hover {
   box-shadow: 4px 4px 3px goldenrod;
-}
-
-.logo {
-  width: 20%;
 }
 
 .link {
@@ -51,7 +48,7 @@ header {
     transition: width .3s;
 }
 
-header nav {
+/* header nav {
   font-family: $heading-font;
   width: 100%;
   display: flex;
@@ -74,11 +71,12 @@ header a {
   font-size: 1.2rem;
   text-shadow: 1px 1px 2px white;
   text-transform: uppercase;
-}
+} */
 
 header h1 {
   font-family: $heading-font;
   color: white;
+  text-align: center;
   font-size: 9.1rem;
   text-transform: uppercase;
   text-shadow: 6px 6px 3px black,
@@ -88,16 +86,125 @@ header h1 {
                     6px 6px 3px black,
                      6px 6px 3px black,
                       6px 6px 3px black;
-  margin-top: 15%;
-  z-index: 30;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
 header img {
   margin-top: 10%;
 }
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: fixed;
+  margin: 16px 36px;
+  color: #fff;
+  font-weight: bold;
+  float: left;
+  font-size: 2.4rem;
+  margin-right: 0;
+  margin-left: 0;
+
+}
+
+header nav {
+  /* position: fixed; */
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  background: rgba(0,0,0,0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: transparent;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.menu-icon {
+  width: 100%;
+  background: #000;
+  text-align: right;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+  svg {
+    color: white;
+    margin-right: 0;
+  }
+}
+
+header .svg-inline--fa:hover {
+  color: goldenrod;
+}
+
+@media(max-width: $break-tablet) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: #000;
+    z-index: 30;
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  nav.black ul {
+    background: #000;
+  }
+
+  .showing {
+    max-height: 45em;
+  }
+
+  nav ul li {
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+    z-index: 30;
+  }
+
+  .menu-icon {
+    display: inline-block;
+  }
+
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: $break-tablet) {
   .top-bar {
@@ -114,6 +221,9 @@ header img {
     display: flex;
     margin-top: 40%;
   }
+  header nav {
+    position: fixed;
+  }
 
 }
 
@@ -128,6 +238,8 @@ header img {
     a {
       font-size: 0.7rem;
     }
+
+
   }
 
 }

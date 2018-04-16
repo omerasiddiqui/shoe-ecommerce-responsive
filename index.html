@@ -8,29 +8,41 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway|Domine|Aldrich" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="assets/slicknav.css" />
   <link rel="stylesheet" href="styles/styles.css">
   <title>Project Three</title>
 </head>
 
 <body>
   <!-- HEADER STARTS HERE -->
-  <header>
+  <header id="top">
     <div class="top-bar">
       <p>free shipping on all domestic orders over $200</p>
     </div>
-    <div class="wrapper">
+    <div>
       <nav>
-        <ul>
-          <li><a class="link" href="#featured">Featured</a></li>
-          <li><a class="link" href="#newArrivals">Arrivals</a></li>
-          <li><a class="link" href="#location">Locations</a></li>
-          <li><a class="link" href="#hours">Hours</a></li>
-          <li><a class="link" href="#prices">Releases</a></li>
-        </ul>
+        <div class="menu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a class="link" href="#featured">Featured</a></li>
+            <li><a class="link" href="#newArrivals">Arrivals</a></li>
+            <li><a class="link" href="#location">Locations</a></li>
+            <li><a class="link" href="#hours">Hours</a></li>
+            <li><a class="link" href="#prices">Releases</a></li>
+          </ul>
+        </div>
       </nav>
+    </div>
+    <div class="heading wrapper">
       <h1>Lorem Ipsum</h1>
+      <div class="status"></div>
+
     </div>
   </header>
+
+
   <!-- HEADER ENDS HERE -->
 
   <!-- MAIN STARTS HERE -->
@@ -312,6 +324,10 @@
       </div>
     </section>
 
+    <div class="container">
+      <a href="#top" class="to-top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
 
   </main>
   <!-- MAIN ENDS HERE -->
@@ -326,13 +342,13 @@
         <a href="#">Terms of Service</a>
       </div>
       <div class="footer-item">
-        <p>Los Angeles Location</p>
+        <p>LA Location</p>
         <p>535 N Fairfax Ave</p>
         <p>Los Angeles, CA 90036</p>
         <a href="#">@ Rosewood</a>
       </div>
       <div class="footer-item">
-        <p>New York Location</p>
+        <p>NY Location</p>
         <p>298 Utica Avenue</p>
         <p>Brooklyn, NY 11213</p>
         <a href="#">@ Utica</a>
@@ -347,13 +363,15 @@
       </div>
       <div class="footer-item connect">
         <div class="social">
-          <p>Connect With us</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
+          <div class="connect-p">
+          <p>Connect With Us</p>
           </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -362,115 +380,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/instafeed.min"></script>
-  <!-- <script src="script.js"></script> -->
-
-  <script>
-    $(function() {
-
-      var $topBar = $('.top-bar');
-
-      var $theTenTop = $('.featured-top');
-      var $theTenBottom = $('.featured-gallery');
-
-      var $newArrivalsTop = $('.newarrivals-top');
-      var $newArrivalsBottom = $('.newarrivals-bottom');
-
-      var $locationTop = $('.location-top');
-      var $locationBottom = $('.location-bottom');
-
-      var $hoursTop = $('.hours-top');
-      var $hoursBottom = $('.hours-bottom');
-
-      var $pricesTop = $('.prices');
-      var $pricesBottom = $('.prices-menu');
-
-      var $moreDetails = $('.moreDetails');
-
-
-      $topBar.waypoint(function() {
-        $topBar.addClass('animated fadeInDown js-animate');
-      }, {
-        offset: '50%'
-      });
-
-      $theTenTop.waypoint(function() {
-        $theTenTop.addClass('animated fadeInUp js-animate');
-      }, {
-        offset: '50%'
-      });
-
-      $theTenBottom.waypoint(function() {
-        $theTenBottom.addClass('animated fadeInLeft js-animate');
-      }, {
-        offset: '65%'
-      });
-      ////////////////////
-
-      $newArrivalsTop.waypoint(function() {
-        $newArrivalsTop.addClass('animated fadeInUp js-animate');
-      }, {
-        offset: '50%'
-      });
-
-      $newArrivalsBottom.waypoint(function() {
-        $newArrivalsBottom.addClass('animated fadeInLeft js-animate');
-      }, {
-        offset: '65%'
-      });
-
-      ////////////////////////////////////////////////
-
-      $locationTop.waypoint(function() {
-        $locationTop.addClass('animated fadeInUp js-animate');
-      }, {
-        offset: '50%'
-      });
-
-      $locationBottom.waypoint(function() {
-        $locationBottom.addClass('animated fadeInLeft js-animate');
-      }, {
-        offset: '65%'
-      });
-      ////////////////////////////
-      $hoursTop.waypoint(function() {
-        $hoursTop.addClass('animated fadeInUp js-animate');
-      }, {
-        offset: '50%'
-      });
-
-      $hoursBottom.waypoint(function() {
-        $hoursBottom.addClass('animated fadeInLeft js-animate');
-      }, {
-        offset: '65%'
-      });
-      ///////////////////////////////////////
-      $pricesTop.waypoint(function() {
-        $pricesTop.addClass('animated fadeInUp js-animate');
-      }, {
-        offset: '50%'
-      });
-
-      $pricesBottom.waypoint(function() {
-        $pricesBottom.addClass('animated fadeInLeft js-animate');
-      }, {
-        offset: '65%'
-      });
-
-      $('.figure').hover(function() {
-        $moreDetails.addClass('animated shake');
-      }, function() {
-        $moreDetails.removeClass('animated shake');
-      });
-
-
-      $('nav a').smoothScroll({
-        offset: 100,
-        speed: 1000
-      });
-
-    });
-  </script>
+  <script src="assets/jquery.slicknav.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
 

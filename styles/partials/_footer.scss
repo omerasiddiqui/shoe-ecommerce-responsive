@@ -17,6 +17,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 18%;
+  align-items: center;
   a {
     text-decoration: none;
     color: black;
@@ -95,7 +96,7 @@ label {
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 footer p {
@@ -111,8 +112,9 @@ footer p {
   font-size: 2.2rem;
   margin: 5px;
   color: black;
-  margin-right: 20px;
+  margin: 0 10px;
 }
+
 
 .svg-inline--fa:hover {
   color: tomato;
@@ -125,12 +127,34 @@ footer p {
 
     .connect {
       order: -1;
-      width: 33%
+      width: 100%;
+      margin-bottom: 3%;
     }
 
     .email {
-      width: 66%;
+      width: 100%;
       order: -1;
+    }
+
+    .social {
+      padding: 0;
+      margin-top: 0;
+    }
+
+    .social-icons {
+      padding-bottom: 2%;
+    }
+
+    ,footer p, footer a {
+    font-size: 0.7rem;
+  }
+
+    .social p {
+      margin: 2% 0;
+    }
+
+    .connect-p {
+      display: none;
     }
 
 }
@@ -138,9 +162,6 @@ footer p {
 @media (max-width: $break-phone) {
 
 
-  .social-icons {
-    padding-top: 60%;
-  }
 
 
 }
