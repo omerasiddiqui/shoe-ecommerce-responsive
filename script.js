@@ -4,18 +4,6 @@ $(function() {
     $('nav ul').toggleClass('showing');
   });
 
-  // $(window).on('scroll', function() {
-  //   if($(window).scrollTop()) {
-  //     $('nav').addClass('black');
-  //   }
-  //   else {
-  //     $('nav').removeClass('black');
-  //     $('menu-icon').css('background-color', 'none');
-  //   }
-  // })
-
-
-
   // Waypoints + CSSAnimate
 
   var $topBar = $('.top-bar');
@@ -55,7 +43,6 @@ $(function() {
   }, {
     offset: '65%'
   });
-  ////////////////////
 
   $newArrivalsTop.waypoint(function() {
     $newArrivalsTop.addClass('animated fadeInUp js-animate');
@@ -69,8 +56,6 @@ $(function() {
     offset: '65%'
   });
 
-  ////////////////////////////////////////////////
-
   $locationTop.waypoint(function() {
     $locationTop.addClass('animated fadeInUp js-animate');
   }, {
@@ -82,7 +67,7 @@ $(function() {
   }, {
     offset: '65%'
   });
-  ////////////////////////////
+
   $hoursTop.waypoint(function() {
     $hoursTop.addClass('animated fadeInUp js-animate');
   }, {
@@ -94,7 +79,7 @@ $(function() {
   }, {
     offset: '65%'
   });
-  ///////////////////////////////////////
+
   $pricesTop.waypoint(function() {
     $pricesTop.addClass('animated fadeInUp js-animate');
   }, {
@@ -117,32 +102,10 @@ $(function() {
 
   // Smooth Scroll
 
-
   $('nav a').smoothScroll({
     offset: 100,
     speed: 1000
   });
-
-////////////////////////
-
-  // Sticky nav
-
-  var navOffset = $('.featured-top').offset().top;
-  var scrollPos = $(window).scrollTop();
-
-  $(window).scroll(function() {
-    var scrollPos = $(window).scrollTop();
-    console.log(scrollPos);
-  });
-
-  if (scrollPos >= navOffset) {
-    $('header nav').addClass('disappear');
-  }
-  else {
-    $('header nav').removeClass('disappear');
-  }
-
-
 
   ////////////////////////////////////////////////
 

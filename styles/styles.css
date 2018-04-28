@@ -233,30 +233,6 @@ nav a {
   -o-transition: width .3s;
   transition: width .3s; }
 
-/* header nav {
-  font-family: $heading-font;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-top: 5%;
-}
-
-
-
-header ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-
-header a {
-  text-decoration: none;
-  padding: 20px;
-  font-size: 1.2rem;
-  text-shadow: 1px 1px 2px white;
-  text-transform: uppercase;
-} */
 header h1 {
   font-family: "Domine", serif;
   color: white;
@@ -280,7 +256,7 @@ header img {
   align-items: center; }
 
 .logo {
-  position: fixed;
+  /* position: fixed; */
   margin: 16px 36px;
   color: #fff;
   font-weight: bold;
@@ -306,7 +282,7 @@ nav ul {
   transition: 1s; }
 
 nav.black ul {
-  background: transparent; }
+  background: black; }
 
 nav ul li {
   display: inline-block;
@@ -329,22 +305,18 @@ nav ul li a {
     color: white;
     margin-right: 0; }
 
-header .svg-inline--fa:hover {
-  color: goldenrod; }
-
 @media (max-width: 800px) {
   .logo {
-    position: fixed;
     top: 0;
     margin-top: 16px; }
   nav ul {
     max-height: 0px;
-    background: #000;
+    background: black;
     z-index: 30; }
   .disappear {
     display: none; }
   nav.black ul {
-    background: #000; }
+    background: black; }
   .showing {
     max-height: 45em; }
   nav ul li {
@@ -355,9 +327,19 @@ header .svg-inline--fa:hover {
   .menu-icon {
     display: inline-block; } }
 
+.svg-inline--fa {
+  color: white;
+  font-size: 1.3rem; }
+
 @media (max-width: 800px) {
   .top-bar {
     display: none; }
+  ul .svg-inline--fa {
+    margin-bottom: 3%; }
+  .cart {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1; }
   header a {
     font-size: 1.0rem;
     padding: 7px; }
@@ -368,7 +350,16 @@ header .svg-inline--fa:hover {
     display: flex;
     margin-top: 40%; }
   header nav {
-    position: fixed; } }
+    /* position: fixed; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  nav ul li {
+    padding: 6px 0; } }
 
 @media (max-width: 500px) {
   header a {
@@ -1016,13 +1007,13 @@ footer p {
 .social img {
   border-radius: 50%; }
 
-.svg-inline--fa {
+footer .svg-inline--fa {
   font-size: 2.2rem;
   margin: 5px;
   color: black;
   margin: 0 10px; }
 
-.svg-inline--fa:hover {
+footer .svg-inline--fa:hover {
   color: tomato; }
 
 @media (max-width: 800px) {

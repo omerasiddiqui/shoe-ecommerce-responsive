@@ -108,7 +108,7 @@ footer p {
 }
 
 
-.svg-inline--fa {
+footer .svg-inline--fa {
   font-size: 2.2rem;
   margin: 5px;
   color: black;
@@ -116,9 +116,11 @@ footer p {
 }
 
 
-.svg-inline--fa:hover {
+footer .svg-inline--fa:hover {
   color: tomato;
 }
+
+//////////////////////////////////////////////////////////////////////////////////
 
 @media (max-width: $break-tablet) {
     .footer-item {

@@ -48,31 +48,6 @@ nav a {
     transition: width .3s;
 }
 
-/* header nav {
-  font-family: $heading-font;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-top: 5%;
-}
-
-
-
-header ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-
-header a {
-  text-decoration: none;
-  padding: 20px;
-  font-size: 1.2rem;
-  text-shadow: 1px 1px 2px white;
-  text-transform: uppercase;
-} */
-
 header h1 {
   font-family: $heading-font;
   color: white;
@@ -99,7 +74,7 @@ header img {
 }
 
 .logo {
-  position: fixed;
+  /* position: fixed; */
   margin: 16px 36px;
   color: #fff;
   font-weight: bold;
@@ -117,7 +92,7 @@ header nav {
 
 nav ul {
   list-style: none;
-  background: rgba(0,0,0,0);
+  background: transparent;
   overflow: hidden;
   color: #fff;
   padding: 0;
@@ -127,7 +102,7 @@ nav ul {
 }
 
 nav.black ul {
-  background: transparent;
+  background: black;
 }
 
 nav ul li {
@@ -155,20 +130,17 @@ nav ul li a {
   }
 }
 
-header .svg-inline--fa:hover {
-  color: goldenrod;
-}
+
 
 @media(max-width: $break-tablet) {
   .logo {
-    position: fixed;
     top: 0;
     margin-top: 16px;
   }
 
   nav ul {
     max-height: 0px;
-    background: #000;
+    background: black;
     z-index: 30;
   }
 
@@ -177,7 +149,7 @@ header .svg-inline--fa:hover {
   }
 
   nav.black ul {
-    background: #000;
+    background: black;
   }
 
   .showing {
@@ -197,18 +169,24 @@ header .svg-inline--fa:hover {
 
 }
 
+.svg-inline--fa {
+  color: white;
+  font-size: 1.3rem;
+}
 
-
-
-
-
-
-
-
+////////////////////////////////////////////////////////////////////////////////////////
 
 @media (max-width: $break-tablet) {
   .top-bar {
     display: none;
+  }
+
+  ul .svg-inline--fa {
+    margin-bottom: 3%;
+  }
+
+  .cart {
+    order: -1;
   }
 
   header a {
@@ -222,7 +200,13 @@ header .svg-inline--fa:hover {
     margin-top: 40%;
   }
   header nav {
-    position: fixed;
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    padding: 6px 0;
   }
 
 }
